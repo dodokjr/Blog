@@ -1,5 +1,4 @@
-import {React, useState} from 'react'
-import NavItem from 'components/NavItem'
+import React, {useState} from 'react'
 import Link from 'next/link'
 import Script from 'next/script'
 import Head from 'next/head'
@@ -7,7 +6,6 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Navbar from 'components/Navbar'
-import Card from 'components/Card'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,7 +25,6 @@ const [activeIdx, setActiveIdx] = useState(-1);
       <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" />
       <main className={styles.main}>
       <Navbar/>
-      <Card/>
       </main>
     </>
   );
